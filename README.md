@@ -1,2 +1,29 @@
 # dylancunniffe.com
-This is the public repo of my personal website. I'm learning web development while at the same time follow agile product development.
+
+Personal website for Dylan Cunniffe — Product Manager based in Cape Town, South Africa.
+
+[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/djcunniffe/personal-website)
+
+## About
+
+I'm a Product Manager based in Cape Town, South Africa. This is my personal website where you can learn a bit more about me, what I've done, and what I can do for you.
+
+## Tech Stack
+
+- **HTML / CSS** — hand-written, no build step required
+- **[Bulma](https://bulma.io/)** — CSS framework for layout and components
+- **[Ionicons](https://ionic.io/ionicons)** — icon library
+- **[Netlify](https://www.netlify.com/)** — hosting and continuous deployment
+
+## Project Structure
+
+```
+├── index.html                               # Main page
+├── style.css                                # Custom styles
+├── profile_photo.png                        # Profile photo
+└── Curriculum Vitae - Dylan Cunniffe.pdf    # Downloadable CV
+```
+
+## Deployment
+
+The site is hosted on Netlify and automatically deploys on every push to `master`. No build process needed — Netlify serves the static files directly.

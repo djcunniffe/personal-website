@@ -1,2 +1,14 @@
+=======
+# OS
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Claude
 .claude/
 node_modules/

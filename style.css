@@ -1,0 +1,395 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* ─── Custom Properties ──────────────────────────────────────────────────── */
+:root {
+  --accent:       #0ea5e9;
+  --accent-light: #e0f2fe;
+  --text:         #1f2937;
+  --muted:        #6b7280;
+  --border:       #e5e7eb;
+  --bg:           #ffffff;
+  --bg-alt:       #f8fafc;
+  --radius:       8px;
+  --max-prose:    720px;
+}
+
+/* ─── Base ───────────────────────────────────────────────────────────────── */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Override Bulma's default title/subtitle fonts */
+.title,
+.subtitle {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+}
+
+/* ─── Section Alternating Backgrounds ───────────────────────────────────── */
+.section-alt {
+  background: var(--bg-alt);
+}
+
+/* ─── Hero ───────────────────────────────────────────────────────────────── */
+.hero-section {
+  padding: 5rem 1.5rem 4rem;
+}
+
+.hero-inner {
+  max-width: 860px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  justify-content: space-between;
+}
+
+.hero-content {
+  flex: 1;
+}
+
+.hero-name {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.1;
+  color: var(--text);
+  margin-bottom: 0.5rem;
+}
+
+.hero-title {
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: var(--accent);
+  margin-bottom: 1rem;
+}
+
+.hero-tagline {
+  font-size: 1.05rem;
+  color: var(--muted);
+  line-height: 1.6;
+  max-width: 480px;
+  margin-bottom: 1.75rem;
+}
+
+.hero-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-links a {
+  color: var(--muted);
+  transition: color 0.15s ease;
+  display: flex;
+  align-items: center;
+}
+
+.hero-links a:hover {
+  color: var(--accent);
+}
+
+.hero-links ion-icon {
+  font-size: 1.6rem;
+}
+
+/* Profile Photo */
+.profile-photo-wrap {
+  flex-shrink: 0;
+}
+
+.profile-photo-wrap img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.12);
+  border: 3px solid var(--bg);
+}
+
+/* ─── Section Prose Layout ───────────────────────────────────────────────── */
+.section-inner {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--muted);
+  margin-bottom: 2rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid var(--border);
+}
+
+/* ─── About ──────────────────────────────────────────────────────────────── */
+.about-prose {
+  max-width: var(--max-prose);
+}
+
+.about-prose p {
+  font-size: 1.05rem;
+  line-height: 1.75;
+  color: var(--text);
+  margin-bottom: 1.1rem;
+}
+
+.about-prose a {
+  color: var(--accent);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.about-prose a:hover {
+  text-decoration: underline;
+}
+
+/* ─── CV Download Button ─────────────────────────────────────────────────── */
+.btn-download {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin-top: 0.5rem;
+  padding: 0.6rem 1.25rem;
+  border: 1.5px solid var(--accent);
+  color: var(--accent);
+  border-radius: var(--radius);
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background 0.15s ease, color 0.15s ease;
+}
+
+.btn-download:hover {
+  background: var(--accent);
+  color: #ffffff;
+}
+
+.btn-download ion-icon {
+  font-size: 1rem;
+}
+
+/* ─── Portfolio ──────────────────────────────────────────────────────────── */
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.portfolio-card {
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.75rem;
+  transition: box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.portfolio-card:hover {
+  box-shadow: 0 4px 16px rgba(14, 165, 233, 0.1);
+  border-color: #bae6fd;
+}
+
+.portfolio-card.card-featured {
+  border-left: 4px solid var(--accent);
+}
+
+.card-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text);
+}
+
+.card-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: var(--accent-light);
+  color: var(--accent);
+  padding: 0.2rem 0.65rem;
+  border-radius: 100px;
+  white-space: nowrap;
+}
+
+.card-impact {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--accent);
+  background: var(--accent-light);
+  display: inline-block;
+  padding: 0.3rem 0.75rem;
+  border-radius: 6px;
+  margin-bottom: 0.85rem;
+}
+
+.card-body p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+  color: var(--text);
+  margin-bottom: 0.75rem;
+}
+
+.card-body p:last-child {
+  margin-bottom: 0;
+}
+
+.card-tech {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+
+.tech-tag {
+  font-size: 0.75rem;
+  font-weight: 500;
+  background: var(--bg-alt);
+  color: var(--muted);
+  border: 1px solid var(--border);
+  padding: 0.2rem 0.6rem;
+  border-radius: 4px;
+}
+
+/* ─── Skills ─────────────────────────────────────────────────────────────── */
+.skills-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.skill-group {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
+}
+
+.skill-group-label {
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  min-width: 120px;
+  flex-shrink: 0;
+}
+
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  flex: 1;
+}
+
+.skill-tag {
+  font-size: 0.875rem;
+  font-weight: 500;
+  background: var(--bg);
+  color: var(--text);
+  border: 1px solid var(--border);
+  padding: 0.3rem 0.75rem;
+  border-radius: 100px;
+  transition: background 0.15s ease, border-color 0.15s ease;
+}
+
+.skill-tag:hover {
+  background: var(--accent-light);
+  border-color: #bae6fd;
+  color: var(--accent);
+}
+
+/* ─── Footer ─────────────────────────────────────────────────────────────── */
+.site-footer {
+  background: var(--bg-alt);
+  border-top: 1px solid var(--border);
+  padding: 3rem 1.5rem;
+  text-align: center;
+}
+
+.footer-cta {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text);
+  margin-bottom: 1rem;
+}
+
+.footer-links {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.footer-links a {
+  color: var(--muted);
+  transition: color 0.15s ease;
+  display: flex;
+  align-items: center;
+}
+
+.footer-links a:hover {
+  color: var(--accent);
+}
+
+.footer-links ion-icon {
+  font-size: 1.75rem;
+}
+
+.footer-copy {
+  font-size: 0.825rem;
+  color: var(--muted);
+}
+
+/* ─── Responsive ─────────────────────────────────────────────────────────── */
+@media (max-width: 768px) {
+  .hero-section {
+    padding: 3rem 1.25rem 2.5rem;
+  }
+
+  .hero-inner {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+    gap: 1.75rem;
+  }
+
+  .hero-name {
+    font-size: 2.25rem;
+  }
+
+  .hero-tagline {
+    max-width: 100%;
+  }
+
+  .hero-links {
+    justify-content: center;
+  }
+
+  .profile-photo-wrap img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .skill-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .skill-group-label {
+    min-width: unset;
+  }
+}

@@ -2,7 +2,7 @@
 
 Personal website for Dylan Cunniffe — Product Manager based in Cape Town, South Africa.
 
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/djcunniffe/personal-website)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6201435c-d7d4-4d88-8f42-a704c4a2ddd4/deploy-status)](https://app.netlify.com/sites/dylancunniffe/deploys)
 
 ## About
 

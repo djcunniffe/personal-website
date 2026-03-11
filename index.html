@@ -1,82 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Dylan Cunniffe</title>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
-    </head>
-    <body>
-        <section class="section">
-            <div class="container">
-                <div class="columns">
-                    <div class="column is-three-quarters">
-                        <div>
-                            <h1 class="title is-1">Dylan Cunniffe</h1>
-                            <p class="subtitle is-3">Product Manager</p>     
-                        </div>
-                    </div>
-                    <div class="column">
-                        <div class="image is-rounded">
-                            <figure class="image is-128x128">
-                                <img class="is-rounded" src="profile_photo.png" alt="Profile picture">
-                            </figure>
-                        </div>
-                    </div>
-                </div>        
-        </section>
-        <section class="section">
-            <div class="container">
-                <h2 class="title">About me</h2>
-                <div class="content">
-                    <p>I'm a Cape Town based Product Manager with 6+ years of experience shipping complex, high-impact solutions across platform, AI, and consumer-facing products in fintech.
-                    
-                    <p>I spent the bulk of my career at Prodigy Finance - where I led the establishment of the company's first platform product team, developing and integrating solutions across Identity & Access Management, Customer Support, Marketing & Communications and Data platforms. Additionally led a consumer facing domain focusing on the KYC and Loan Disbursement stage of our student loan product.</p>
-                    
-                    <p>I consider myself a Product generalist. Jack of all trades. Thriving on curiosity and a passion for improving things whatever it may be. I have a degree in Economics but just as comfortable on the technical side of things - self taught coder (Python) and data analyst. I'm always eager to  find ways to bring together, business, design and technology to solve problems.</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dylan Cunniffe — Senior Product Manager based in Cape Town. Building at the intersection of AI, platform and user experience.">
+    <title>Dylan Cunniffe — Product Manager</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.4/css/bulma.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>">
+  </head>
+  <body>
 
-                    <p>Outside of work I'm an avid gamer, enjoy learning about the advancements in tech, traveling and exploring the outdoors.</p>
+    <!-- ── Hero ────────────────────────────────────────────────────────── -->
+    <header class="hero-section">
+      <div class="hero-inner">
+        <div class="hero-content">
+          <h1 class="hero-name">Dylan Cunniffe</h1>
+          <p class="hero-title">Senior Product Manager</p>
+          <p class="hero-tagline">Building at the intersection of AI, platform and user experience. Based in Cape Town.</p>
+          <div class="hero-links">
+            <a href="http://bit.ly/dylancunniffe-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+            <a href="https://bit.ly/dylancunniffe-github" target="_blank" rel="noopener" aria-label="GitHub">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+            <a href="mailto:dylan@cunniffe.co.za" aria-label="Email">
+              <ion-icon name="mail-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+        <div class="profile-photo-wrap">
+          <img src="profile_photo.png" alt="Dylan Cunniffe">
+        </div>
+      </div>
+    </header>
 
-                    <p>At the moment, I'm on the lookout for a new PM role and excited to try something new.</p>
-                </div>
+    <!-- ── About ────────────────────────────────────────────────────────── -->
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-title">About</p>
+        <div class="about-prose">
+          <p>I'm a Senior Product Manager based in Cape Town, currently at <a href="https://www.turnstay.com" target="_blank" rel="noopener">TurnStay</a> — a VC-backed seed-stage startup building multi-currency, cross-border payment infrastructure for the travel industry. I joined as the founding PM, working directly with the founders on product strategy, go-to-market, and standing up the internal tooling to make the company run.</p>
+          <p>Before TurnStay, I spent nearly five years at <a href="https://prodigyfinance.com" target="_blank" rel="noopener">Prodigy Finance</a>, a Series C fintech providing international student loans. I started as a Junior PM and grew into leading two domains: Customer Platform (authentication, comms, support infrastructure) and Verify &amp; Disburse (KYC, AML, loan fulfilment). The work ranged from migrating core authentication systems to shipping AI-powered tools for document verification and complaint detection — a few of which you can read about below.</p>
+          <p>My background sits somewhere between product, data and engineering. I studied Economics at UCT, taught myself Python and SQL along the way, and have always been drawn to the messy, interesting problems at the intersection of business logic and technical systems — especially where automation and AI can do the heavy lifting.</p>
+          <p>Outside of work: avid gamer, tech enthusiast, and always happiest somewhere outdoors.</p>
+          <a href="Curriculum Vitae - Dylan Cunniffe.pdf" download class="btn-download">
+            <ion-icon name="download-outline"></ion-icon>
+            Download CV
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Portfolio ────────────────────────────────────────────────────── -->
+    <section class="section">
+      <div class="section-inner">
+        <p class="section-title">Portfolio</p>
+        <div class="portfolio-grid">
+
+          <!-- Sentinel -->
+          <div class="portfolio-card card-featured">
+            <div class="card-header">
+              <span class="card-title">Sentinel</span>
+              <span class="card-tag">AI · Customer Experience</span>
             </div>
-        </section>
+            <div class="card-impact">Reduced complaint escalations at scale</div>
+            <div class="card-body">
+              <p>At Prodigy, we treated customer support as a competitive differentiator — but a rising trend in complaints signalled a deeper issue. Our analysis revealed that most complaints weren't isolated incidents; they were the result of accumulated negative interactions over time. Three consistent markers stood out: customers having to repeat themselves, the tone and sentiment of their messages, and the urgency they conveyed.</p>
+              <p>Rather than solving each potential root cause, we focused on detecting when a customer was veering into a negative interaction path early enough to intervene before frustration escalated into a formal complaint.</p>
+              <p>To address this, we built <strong>Sentinel</strong> — an AI-powered early warning system. Using Zendesk webhooks, OpenAI's API and a custom internal service, we analysed ticket history and context in near real-time to classify sentiment, urgency and repetition. These insights were surfaced directly in Zendesk via a custom app, empowering agents to prioritise and escalate at-risk conversations. We rolled out Sentinel incrementally, refining our prompts with a test group before expanding to full production — scaling to thousands of tickets daily. This not only improved customer experience but gave CS leadership early signals of broader product or process issues.</p>
+            </div>
+            <div class="card-tech">
+              <span class="tech-tag">OpenAI API</span>
+              <span class="tech-tag">Zendesk</span>
+              <span class="tech-tag">Webhooks</span>
+              <span class="tech-tag">Custom Service</span>
+              <span class="tech-tag">Prompt Engineering</span>
+            </div>
+          </div>
 
-        <section class="section">
-            <div class="container">
-                <h2 class="title">Portfolio</h2>
-                <div class="content">
-                    <div class="box">
-                        <strong>Sentinel</strong>
-                            <p>At Prodigy, we treated customer support as a competitive differentiator, but a rising trend in complaints signaled a deeper issue. Our analysis revealed that most complaints were not isolated incidents. They were the result of accumulated negative interactions over time. 
-                            Three consistent markers stood out: customers having to repeat themselves, the tone and sentiment of their messages, and the urgency they conveyed. Rather than solving each potential root cause, we focused on detecting when a customer was veering into this negative interaction path. Allowing us to intervene early, 
-                            before frustration escalated into a formal complaint.
-                            </p>
-                            <p>
-                            To address this, we built <strong>Sentinel</strong>, an AI-powered early warning system. Using Zendesk webhooks, OpenAI's API, and a custom internal service, we analyzed ticket history and context in near real-time to classify sentiment, urgency, and repetition. These insights were surfaced directly in Zendesk via a custom app, empowering agents to prioritize and escalate at-risk conversations. 
-                            We rolled out Sentinel incrementally, refining our prompts with a test group before expanding to full production. Scaling to thousands of tickets daily. This not only enhanced customer experience but equipped CS leadership with early signals of broader product or process issues. Future iterations aimed to improve intervention tracking and integrate defect detection to catch product bugs earlier.
-                            </p>
-                    </div>
-                </div>
+          <!-- AI Document Verifier -->
+          <div class="portfolio-card">
+            <div class="card-header">
+              <span class="card-title">AI Document Verifier</span>
+              <span class="card-tag">AI · Automation</span>
+            </div>
+            <div class="card-impact">50% reduction in manual document verification</div>
+            <div class="card-body">
+              <p>Manual document review was a significant bottleneck in Prodigy's KYC process — labour-intensive, error-prone and difficult to scale. Working closely with the Data Science team, I led the product development of a multi-agent AI verifier capable of reviewing uploaded documents, cross-referencing data and flagging exceptions for human review.</p>
+              <p>The result was a 50% cut in manual verification workload, faster customer onboarding, and a more consistent, auditable review process.</p>
+            </div>
+            <div class="card-tech">
+              <span class="tech-tag">Multi-agent AI</span>
+              <span class="tech-tag">KYC / AML</span>
+              <span class="tech-tag">Data Science collaboration</span>
+            </div>
+          </div>
 
-        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
-    </body>
-    <footer class="footer">
-        <div class="content has-text-centered">
-            <p>Want to get in touch?</p>
-            <a href="http://bit.ly/dylancunniffe-linkedin">
-                <span class="icon is-large">
-                    <ion-icon name="logo-linkedin" size="large" ></ion-icon>
-                </span>
-            </a>
-            <a href="https://bit.ly/dylancunniffe-github">
-                <span class="icon is-large">
-                    <ion-icon name="logo-github" size="large" ></ion-icon>
-                </span>
-            </a>
+          <!-- UK Direct Disbursal -->
+          <div class="portfolio-card">
+            <div class="card-header">
+              <span class="card-title">UK Direct Disbursal</span>
+              <span class="card-tag">Growth · Fulfilment</span>
+            </div>
+            <div class="card-impact">61% increase in UK average loan size</div>
+            <div class="card-body">
+              <p>Prodigy's UK market was underperforming relative to its potential. Research revealed that the existing disbursement flow was a barrier to higher-value loans — funds were routed through university finance offices rather than directly to students, creating friction and limiting the addressable loan amount.</p>
+              <p>I led the design and launch of a direct-to-customer disbursal feature that bypassed this constraint. The result was a 61% increase in average UK loan size and a meaningful gain in market share in non-US markets.</p>
+            </div>
+            <div class="card-tech">
+              <span class="tech-tag">Fulfilment</span>
+              <span class="tech-tag">Market Expansion</span>
+              <span class="tech-tag">Payment Flows</span>
+            </div>
+          </div>
+
         </div>
-        <div class="content has-text-centered is-small">
-            <p>&copy 2025 Dylan Cunniffe. All rights reserved</p>
+      </div>
+    </section>
+
+    <!-- ── Skills ───────────────────────────────────────────────────────── -->
+    <section class="section section-alt">
+      <div class="section-inner">
+        <p class="section-title">Skills &amp; Tools</p>
+        <div class="skills-grid">
+
+          <div class="skill-group">
+            <span class="skill-group-label">Product Tooling</span>
+            <div class="skill-tags">
+              <span class="skill-tag">Heap</span>
+              <span class="skill-tag">Metabase</span>
+              <span class="skill-tag">Hightouch</span>
+              <span class="skill-tag">Tableau</span>
+              <span class="skill-tag">JIRA</span>
+              <span class="skill-tag">Zendesk</span>
+              <span class="skill-tag">Miro</span>
+              <span class="skill-tag">Intercom</span>
+              <span class="skill-tag">Attio</span>
+              <span class="skill-tag">n8n</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-group-label">Data &amp; Dev</span>
+            <div class="skill-tags">
+              <span class="skill-tag">SQL</span>
+              <span class="skill-tag">Python</span>
+              <span class="skill-tag">API Design</span>
+              <span class="skill-tag">Reverse ETL</span>
+              <span class="skill-tag">Process Automation</span>
+            </div>
+          </div>
+
+          <div class="skill-group">
+            <span class="skill-group-label">Core Strengths</span>
+            <div class="skill-tags">
+              <span class="skill-tag">Platform Strategy</span>
+              <span class="skill-tag">Experimentation</span>
+              <span class="skill-tag">AI &amp; Automation</span>
+              <span class="skill-tag">Internal Tools</span>
+              <span class="skill-tag">OKRs</span>
+              <span class="skill-tag">JTBD</span>
+              <span class="skill-tag">Roadmapping</span>
+            </div>
+          </div>
+
         </div>
-    </footer>    
+      </div>
+    </section>
+
+    <!-- ── Footer ───────────────────────────────────────────────────────── -->
+    <footer class="site-footer">
+      <p class="footer-cta">Want to get in touch?</p>
+      <div class="footer-links">
+        <a href="http://bit.ly/dylancunniffe-linkedin" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <ion-icon name="logo-linkedin"></ion-icon>
+        </a>
+        <a href="https://bit.ly/dylancunniffe-github" target="_blank" rel="noopener" aria-label="GitHub">
+          <ion-icon name="logo-github"></ion-icon>
+        </a>
+        <a href="mailto:dylan@cunniffe.co.za" aria-label="Email">
+          <ion-icon name="mail-outline"></ion-icon>
+        </a>
+      </div>
+      <p class="footer-copy">&copy; 2026 Dylan Cunniffe. All rights reserved.</p>
+    </footer>
+
+    <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+  </body>
 </html>
